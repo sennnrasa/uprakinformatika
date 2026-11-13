@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kelompok Belajar 3 - Pixel Hub</title>
+  <meta name="description" content="Landing page bertema pixel art untuk Kelompok Belajar 3 dengan enam kartu anggota dan daftar tugas interaktif." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600;700&family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <meta property="og:title" content="Kelompok Belajar 3 - Pixel Hub" />
+  <meta property="og:description" content="Landing page pixel art dengan kartu anggota dan daftar tugas interaktif." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#020617" />
+</head>
+<body>
+  <div id="bg-layer" style="background-image: url('download (37).jpe');"></div>
+  <div class="bg-overlay"></div>
+  <div class="pixel-grid-dots"></div>
+  <div id="crt-overlay" class="crt-scanlines"></div>
+
+  <main class="site-main">
+    <div class="utility-bar" aria-label="Pengaturan website">
+      <button id="sound-toggle" class="pixel-btn utility-btn" type="button" aria-pressed="true">♪ SUARA: ON</button>
+      <button id="theme-toggle" class="pixel-btn utility-btn" type="button" aria-pressed="false">☼ MODE TERANG</button>
+    </div>
+
+    <section id="page-1" class="page-intro animate-intro-appear">
+      <div class="badge-uprak">UPRAK INFORMATIKA</div>
+      <h1 class="font-pixel-title pixel-text-bounce intro-title">Perkenalkan kami dari Kelompok Belajar 3</h1>
+      <p class="intro-description">Selamat datang di website kelompok kami. Klik tombol di bawah untuk membuka kartu anggota dan daftar tugas.</p>
+      <div>
+        <button id="btn-lanjut-halaman-2" class="retro-game-btn" type="button">
+          <span>START &gt;*</span><span class="retro-blinking-cursor">▶</span>
+        </button>
+      </div>
+      <div class="press-start">[ PRESS START TO CONTINUE ]</div>
+    </section>
+
+    <section id="page-2" class="page-cards" hidden>
+      <div class="page-topbar">
+        <button id="back-to-home" class="pixel-btn topbar-btn" type="button">← KEMBALI KE MENU UTAMA</button>
+        <div class="page-heading">
+          <h2 class="font-pixel-title section-title">DAFTAR KARTU ANGGOTA</h2>
+          <p class="section-subtitle">Pilih kartu anggota untuk membuka detail dan tautan tugas.</p>
+        </div>
+      </div>
+
+      <div class="search-panel">
+        <label for="member-search">⌕ CARI ANGGOTA</label>
+        <input id="member-search" type="search" placeholder="Ketik nama anggota..." autocomplete="off" />
+        <p id="search-status" class="search-status" aria-live="polite">Menampilkan 6 anggota.</p>
+      </div>
+
+      <div id="cards-container" class="cards-grid">
+        <button class="pixel-card animate-slide-up" style="animation-delay:0ms" type="button" data-card-id="1" aria-label="Buka kartu Satria Bumi Syahrizky">
+          <img src="Biru dan Pink Retro Konser Kartu Tanda Pengenal (3).png" alt="Kartu 1: Satria Bumi Syahrizky" />
+          <span class="card-name">SATRIA BUMI SYAHRIZKY</span><span class="buka-badge"><span>Buka</span><span>▶</span></span>
+        </button>
+        <button class="pixel-card animate-slide-up" style="animation-delay:80ms" type="button" data-card-id="2" aria-label="Buka kartu Muhamad Fariz">
+          <img src="Biru dan Pink Retro Konser Kartu Tanda Pengenal (4).png" alt="Kartu 2: Muhamad Fariz" />
+          <span class="card-name">MUHAMAD FARIZ</span><span class="buka-badge"><span>Buka</span><span>▶</span></span>
+        </button>
+        <button class="pixel-card animate-slide-up" style="animation-delay:160ms" type="button" data-card-id="3" aria-label="Buka kartu Fadlan Alfahrezy">
+          <img src="Biru dan Pink Retro Konser Kartu Tanda Pengenal (4).png" alt="Kartu 3: Fadlan Alfahrezy" />
+          <span class="card-name">FADLAN ALFAHREZY</span><span class="buka-badge"><span>Buka</span><span>▶</span></span>
+        </button>
+        <button class="pixel-card animate-slide-up" style="animation-delay:240ms" type="button" data-card-id="4" aria-label="Buka kartu Qiran Ezra">
+          <img src="Biru dan Pink Retro Konser Kartu Tanda Pengenal (4).png" alt="Kartu 4: Qiran Ezra" />
+          <span class="card-name">QIRAN EZRA</span><span class="buka-badge"><span>Buka</span><span>▶</span></span>
+        </button>
+        <button class="pixel-card animate-slide-up" style="animation-delay:320ms" type="button" data-card-id="5" aria-label="Buka kartu Salman Hikmatul">
+          <img src="Biru dan Pink Retro Konser Kartu Tanda Pengenal (4).png" alt="Kartu 5: Salman Hikmatul" />
+          <span class="card-name">SALMAN HIKMATUL</span><span class="buka-badge"><span>Buka</span><span>▶</span></span>
+        </button>
+        <button class="pixel-card animate-slide-up" style="animation-delay:400ms" type="button" data-card-id="6" aria-label="Buka kartu Rizky Permana">
+          <img src="Biru dan Pink Retro Konser Kartu Tanda Pengenal (4).png" alt="Kartu 6: Rizky Permana" />
+          <span class="card-name">RIZKY PERMANA</span><span class="buka-badge"><span>Buka</span><span>▶</span></span>
+        </button>
+      </div>
+      <p id="empty-search" class="empty-search" hidden>Anggota tidak ditemukan. Coba nama lain.</p>
+      <div class="group-footer">KELOMPOK BELAJAR 3 • PIXEL HUB</div>
+    </section>
+
+    <section id="page-3" class="center-box-container" hidden>
+      <div class="detail-topbar">
+        <button id="back-to-cards" class="pixel-btn topbar-btn" type="button">← MENU KARTU</button>
+        <div class="detail-navigation">
+          <button id="prev-card" class="pixel-btn nav-arrow" type="button" aria-label="Anggota sebelumnya">◀</button>
+          <span id="nav-card-indicator">#1 / 6</span>
+          <button id="next-card" class="pixel-btn nav-arrow" type="button" aria-label="Anggota berikutnya">▶</button>
+        </div>
+      </div>
+      <div id="detail-box-content" class="center-box"></div>
+    </section>
+  </main>
+
+
+  <div id="login-modal" class="login-modal" hidden>
+    <div class="login-backdrop" data-close-login="true"></div>
+    <section class="login-dialog" role="dialog" aria-modal="true" aria-labelledby="login-title">
+      <button id="login-close" class="login-close pixel-btn" type="button" aria-label="Tutup login">✕</button>
+      <div class="badge-uprak login-badge">MEMBER ACCESS</div>
+      <h2 id="login-title" class="font-pixel-title login-title">LOGIN ANGGOTA</h2>
+      <p id="login-member-name" class="login-member-name">Masuk untuk membuka kartu anggota.</p>
+      <form id="member-login-form">
+        <label for="login-username">USERNAME</label>
+        <input id="login-username" name="username" autocomplete="username" required placeholder="Masukkan username" />
+        <label for="login-password">PASSWORD</label>
+        <div class="password-field">
+          <input id="login-password" name="password" type="password" autocomplete="current-password" required placeholder="Masukkan password" />
+          <button id="toggle-password" class="pixel-btn reveal-password" type="button">LIHAT</button>
+        </div>
+        <p id="login-error" class="login-error" role="alert" hidden>Username atau password salah.</p>
+        <button class="retro-game-btn login-submit" type="submit">LOGIN ▶</button>
+      </form>
+      <p class="login-note">Demo login untuk tugas sekolah. Gunakan akun anggota yang sesuai.</p>
+    </section>
+  </div>
+
+  <footer class="site-footer">© 2026 KELOMPOK BELAJAR 3 • BUILT IN PIXEL MODE</footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
